@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="container" >
+    <div class="row">
+
+      <h1>{{p_name}}</h1>
+      </div>
+    <hr>
+    <h2>Similar Product</h2>
+      <div class="row">
+          <div *ngFor="let item of similar"  class="col-sm-6 col-md-4">
+
+
+              <div class="thumbnail" style="background-color: lightgrey">
+
+                <img src="{{item.img}}" style="height:150px; width:990px; " alt="...">
+                <div class="caption">
+                  <p>{{item.p_id}}</p>
+                  <h3>{{item.p_name}}</h3>
+                  <h3>Rs.{{item.p_price}}</h3>
+
+                  <button (click)="onSimilarClick(item)"  class="btn btn-default">View
+                    <!-- <span class="glyphicon glyphicon-trash"></span> -->
+                  </button>
+
+                  </div>
+              </div>
+
+
+            </div>
+
+        </div>
+
+</div>

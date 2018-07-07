@@ -1,0 +1,85 @@
+<h1> VIEW PROFILE</h1>
+<div class="container">
+    <table class="table">
+      <tr>
+        <td>
+          Email_Id
+        </td>
+        <td>
+          <input type="email" disabled [(ngModel)]="email_id">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Password
+        </td>
+        <td>
+          <input type="password" disabled [(ngModel)]="password">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          User_Name
+        </td>
+        <td>
+          <input type="text" disabled [(ngModel)]="user_name">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          Mobile_No
+        </td>
+        <td>
+          <input type="number" disabled [(ngModel)]="mobile_no">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          City
+        </td>
+        <td>
+          <input type="text" disabled [(ngModel)]="city">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          Gender
+        </td>
+        <td>
+          <input type="radio" [(ngModel)]="gender" name="rbt" value="male" disabled>male
+          <input type="radio" [(ngModel)]="gender" name="rbt" value="female" disabled>Female
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          Address
+        </td>
+        <td>
+          <input type="text" disabled [(ngModel)]="address">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button" (click)="updateuser()" routerLink="/editprofile" name="OK" value="Edit PROFILE">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <input type="button" (click)="changepassword()" routerLink="/chpass" name="OK" value="Change Password">
+
+        </td>
+
+
+        </tr>
+
+
+    </table>
+  </div>

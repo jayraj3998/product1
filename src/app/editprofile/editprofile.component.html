@@ -1,0 +1,84 @@
+<h1> EDIT PROFILE</h1>
+<div class="container">
+    <table class="table">
+      <tr>
+        <td>
+          Email_Id
+        </td>
+        <td>
+          <input type="email"  [(ngModel)]="email_id">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Password
+        </td>
+        <td>
+          <input type="password" [(ngModel)]="password">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          User_Name
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="user_name">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          Mobile_No
+        </td>
+        <td>
+          <input type="number" [(ngModel)]="mobile_no">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          City
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="city">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          Gender
+        </td>
+        <td>
+          <input type="radio" name="rbt" [(ngModel)]="gender" value="male">male
+          <input type="radio" name="rbt" [(ngModel)]="gender" value="female">Female
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          Address
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="address">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="button"  name="OK" value="SAVE" (click)="onsave()">
+        </td>
+
+
+        </tr>
+
+
+    </table>
+  </div>
+

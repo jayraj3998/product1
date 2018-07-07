@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="row">
+      <div class="col-md-3">
+        <ul class="list-group">
+          <li (click)="onAllClick()" class="list-group-item" >All</li>
+          <li (click)="onCatClick(item)" *ngFor="let item of arr1" class="list-group-item">{{item.c_name}}</li>
+
+        </ul>
+
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+
+          <div *ngFor="let item of arr" class="col-sm-6 col-md-4">
+            <div class="thumbnail" style="background-color: lightgrey">
+
+              <img src="{{item.img}}" style="height:150px; width:990px; " alt="...">
+              <div class="caption">
+                <p>{{item.p_id}}</p>
+                <h3>{{item.p_name}}</h3>
+                <h3>Rs.{{item.p_price}}</h3>
+
+                <button (click)="onProductView(item)" class="btn btn-default">View
+                  <!-- <span class="glyphicon glyphicon-trash"></span> -->
+                </button>
+
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>

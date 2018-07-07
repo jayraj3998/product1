@@ -1,0 +1,48 @@
+<h1> CHANGE PASSWORD</h1>
+<div class="container">
+    <table class="table">
+      <tr>
+        <td>
+          OLD PASSWORD
+        </td>
+        <td>
+          <input type="password" [(ngModel)]="old_password">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+         NEW PASSWORD
+        </td>
+        <td>
+          <input type="password" [(ngModel)]="new_password">
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          CONFORM PASSWORD
+        </td>
+        <td>
+          <input type="password" [(ngModel)]="conform_password">
+        </td>
+      </tr>
+
+
+
+      <tr>
+        <td>
+          <input type="button" name="OK" value="SAVE" (click)="chpass()">
+        </td>
+
+        <td>
+          <input type="button" name="OK" value="Sign In" (click)="onback()">
+        </td>
+
+        </tr>
+
+
+    </table>
+  </div>
+

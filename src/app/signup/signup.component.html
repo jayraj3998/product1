@@ -1,0 +1,84 @@
+<h1> SIGN UP </h1>
+<div class="container">
+  <table class="table">
+    <tr>
+      <td>
+        Email_Id
+      </td>
+      <td>
+        <input type="email" [(ngModel)]="email_id">
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Password
+      </td>
+      <td>
+        <input type="password" [(ngModel)]="password">
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        User_Name
+      </td>
+      <td>
+        <input type="text" [(ngModel)]="user_name">
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        Phone_No
+      </td>
+      <td>
+        <input type="number" [(ngModel)]="mobile_no">
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        City
+      </td>
+      <td>
+        <input type="text" [(ngModel)]="city">
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        Gender
+      </td>
+      <td>
+        <input type="radio" [(ngModel)]="gender" name="rbt" value="male">male
+        <input type="radio" [(ngModel)]="gender" name="rbt" value="female">Female
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        Address
+      </td>
+      <td>
+        <input type="text" [(ngModel)]="address">
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <button (click)="signup()" routerLink="/login" >Signup</button>
+      </td>
+      <td>
+          <input type="button" name="Cancle" value="Cancle">
+        </td>
+      </tr>
+
+
+  </table>
+</div>

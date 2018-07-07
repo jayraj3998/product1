@@ -1,0 +1,34 @@
+<h1> LOGIN </h1>
+<div class="container">
+    <table class="table">
+      <tr>
+        <td>
+          Email_Id
+        </td>
+        <td>
+          <input type="email" [(ngModel)]="email_id">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Password
+        </td>
+        <td>
+          <input type="password" [(ngModel)]="password">
+        </td>
+      </tr>
+
+      <tr>
+            <input type="button" value="ok" (click)="login1()">&nbsp;
+              <input type="button" name="SignIn" routerLink="/signup" value="sign up">&nbsp;
+                <input type="button" name="Forget password" value="Forget password" (click)="onforget()">
+
+
+          </tr>
+
+
+    </table>
+</div>
+
+
